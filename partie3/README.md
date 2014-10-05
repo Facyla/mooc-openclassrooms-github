@@ -68,7 +68,24 @@ C'est une manière de cloisonner certains développements, comme par exemple le 
 
 Les branches peuvent servir aussi bien seul qu'en collaboration, en permettant de structurer et d'organiser le travail sur différentes parties d'un projet, ou à plusieurs niveaux de maturité de ce projet. Une forme d'organisation simple peut ainsi consister à travailler dans une  ou plusieurs branches de "dev" (par. ex. "dev_marc", "dev_utf8" ou "dev_v1.0.3"), puis à utiliser une branche "preprod" pour les tests, et enfin la "master" pour les versions prêtes à déployer.
 
+Il est possible de passer d'une branche à l'autre afin de travailler successivement dans plusieurs parties d'un projet, ou d'avancer à la fois sur des tâches urgentes, tout en progresssant sur des projets à moyen terme.
+
+Ce qu'il faut bien noter, c'est que le répertoire de travail sera toujours dans l'état de la branche sur laquelle on est positionnée : si on repasse sur la branche "master" après avoir travaillé dans une autre branche, le contenu des fichiers sera modifié pour réprésenter l'état de la branche "master".
+
 Une branche peut être ensuite tout simplement abandonnée, ou fusionnée avec une autre branche. Dans ce cas, il peut être nécessaire de gérer des conflits de fusion, lorsque certains fichiers ont évolué différemment dans les deux branches.
 
+
+Le processus de création, travail et fusion d'une branche peut être résumé avec les commande suivantes :
+1. Créer une nouvelle branche et se positionner dessus
+ git checkout -b ma_branche
+On travaille ensuite normalement, les commits étant dès lors enregistrés dans cette branche.
+
+2. Pour changer de branche, on utilise 
+ git checkout autre_branche
+
+3. Une fois le travail dans une branche terminé, on se repositionne sur la branche d'origine pour y intégrer son travail
+ git checkout master
+ git merge ma_branche
+Il est également possible de fusionner "l'avancée" de la branche master dans sa branche de travail de la même manière : on se positionne sur la branche cible, et on fusionne une autre branche dedans.
 
 
