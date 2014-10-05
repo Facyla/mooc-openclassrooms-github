@@ -8,6 +8,6 @@ Ce répertoire contient les exercices du MOOC Git et Github sur OpenClassrooms.
  - la partie 3 contient l'exercice correspondant.
 
 
-> Accéder au [partie3/Exercice.pdf](PDF correspondant à l'exercice 3)
+> Accéder au [PDF correspondant à l'exercice 3](partie3/Exercice.pdf)
 
 
