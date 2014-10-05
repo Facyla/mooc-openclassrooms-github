@@ -16,7 +16,9 @@ La documentation est souvent le maillon manquant entre les développeurs et les 
 
 Quelque peu frustré par l'accès aux vidéos, qui avec ma version d'ubuntu et de flash fonctionnent bien sur Vimeo mais pas sur OpenClassrooms (pratique...), je privilégie pour cette exercice la forme texte la plus simple, le contenu de l'exercice étant ici rédigé avec nano et gedit sous la forme de fichiers README.md
 
-L'export PDF sera fait en fin de rédaction sous LibreOffice Text, par copier-coller des parties suivantes depuis le rendu sur Github https://github.com/Facyla/mooc-openclassrooms-github/blob/master/partie3/README.md
+L'export PDF sera fait en fin de rédaction sous LibreOffice Writer, par copier-coller des parties ci-dessous depuis le rendu sur Github https://github.com/Facyla/mooc-openclassrooms-github/blob/master/partie3/README.md  
+Le résultat sera alors intégré au repository : https://github.com/Facyla/mooc-openclassrooms-github/blob/master/partie3/Exercice.pdf  
+Et l'export zip du repository finalement publié sur OpenClassrooms : https://github.com/Facyla/mooc-openclassrooms-github/archive/master.zip
 
 
 ### Qu'est-ce qu'un commit ?
