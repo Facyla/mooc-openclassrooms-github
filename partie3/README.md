@@ -30,7 +30,7 @@ Cela signifie à ce stade que ces modifications existent bien dans l'état actue
 
 2. Ces modifications doivent alors être "validées", c'est-à-dire qu'il convient d'indiquer lesquelles doivent être inclues dans ce prochain "commit", ce que l'on fait avec la commande suivante qui ajoute tous les fichiers déjà suivis à l'index (mais n'ajoutera pas les fichiers que l'on vient de créer) :  
 `git add .`  
-Le ou les fichiers modifiés (et déjà indexés) sont alors "prêts à être commités", c'est-à-dire *prêts à être inclus dans le prochain commit*.  
+Le ou les fichiers modifiés (et déjà indexés) sont alors "prêts à être commités", c'est-à-dire *prêts à être inclus dans le prochain commit*.
 Une variante de cette commande permet d'ajouter de nouveaux fichiers à l'index (ou de prendre en compte les fichiers supprimés) :  
 `git add -A`.  
 
@@ -45,7 +45,7 @@ Du point de vue du développeur qui utilise "git", l'évolution d'un projet est 
 
 Par comparaison avec l'état précédent du projet, un commit peut être considéré comme la matérialisation d'une série de modifications que l'on souhaite enregistrer dans le projet : d'un point de vue très "pratique", un commit peut être vu comme une étape de plus dans l'avancement d'un projet.
 
-Il peut aussi bien consister en la modification d'un caractère, que l'ajout d'une librairie complète au projet.
+Un commit peut aussi bien consister en la modification d'un seul caractère, qu'en l'ajout d'une librairie complète au projet., cela ne dépend que de la manière de les utiliser !
 
 
 
@@ -55,7 +55,7 @@ Il peut aussi bien consister en la modification d'un caractère, que l'ajout d'u
 
 Cette liste précise l'auteur, la date et le commentaire associé à chacun des commits, et dispose de diverses options qui permettent d'affiner les résultats sur une période ou un répertoire précis, afin de "voir ce qui s'est passé récemment" dans un répertoire précis.
 
-C'est donc une commande informative, qui ne modifie rien... elle est tout à fait comparable à un "tail" sur un fichier de log apache.
+C'est donc une commande informative, qui ne modifie rien... elle est tout à fait comparable à un `tail` sur un fichier de log apache.
 
 
 
@@ -77,10 +77,12 @@ Ce qu'il faut bien noter, c'est que le répertoire de travail sera toujours dans
 Une branche peut être ensuite tout simplement abandonnée, ou fusionnée avec une autre branche. Dans ce cas, il peut être nécessaire de gérer des conflits de fusion, lorsque certains fichiers ont évolué différemment dans les deux branches.
 
 
-Le processus de création, travail et fusion d'une branche peut être résumé avec les commande suivantes :
+
+Le processus de création, travail et fusion d'une branche peut être résumé avec les commande suivantes :  
+
 1. Créer une nouvelle branche et se positionner dessus  
 `git checkout -b ma_branche`  
-On travaille ensuite normalement, les commits étant dès lors enregistrés dans cette branche.
+On travaille ensuite normalement dans "ma_branche", les commits étant dès lors enregistrés dans cette branche.
 
 2. Pour changer de branche, on utilise  
 `git checkout autre_branche`
